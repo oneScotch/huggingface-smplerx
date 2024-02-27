@@ -119,5 +119,5 @@ class Inferer:
             vis_img = render_mesh(vis_img, mesh, smpl_x.face, {'focal': focal, 'princpt': princpt}, 
                                   mesh_as_vertices=self.mesh_as_vertices)
             vis_img = vis_img.astype('uint8') 
-        return vis_img[:, :, ::-1], mesh_paths, smplx_paths
+        return vis_img, mesh_paths, smplx_paths
 
